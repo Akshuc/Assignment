@@ -21,8 +21,12 @@ const MyArguments = () => {
     const addarg = [...argument,];
 
     const argvalue = document.getElementsByClassName('mySelect')[index].value;
+    
+    console.log(addargument);
 
     addarg[index] = { value: addargument, label: addargument, answer: argvalue };
+    
+    console.log(argvalue);
 
     setargument(addarg);
     
