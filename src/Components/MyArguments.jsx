@@ -11,7 +11,7 @@ const MyArguments = () => {
     setvalue();
   }, [argument])
 
-  var result ;
+  
 
 
 
@@ -25,8 +25,6 @@ const MyArguments = () => {
     addarg[index] = { value: addargument, label: addargument, answer: argvalue };
 
     setargument(addarg);
-
-    result = addarg.answer;
     
     setvalue();
 
@@ -77,8 +75,6 @@ const MyArguments = () => {
         <button id="button" onClick={addArg}>+Add Arg</button>
 
         <br />
-
-        <h1>Result:{result}</h1>
     </>
   )
 }
